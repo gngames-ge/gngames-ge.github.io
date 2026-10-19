@@ -131,7 +131,7 @@ body.racing{--paper:#0c0c0f;--paper-2:#15151a;--ink:#f3efe6;--ink-2:#d9d4c9;--mu
 body.racing::before{mix-blend-mode:screen;opacity:.05}
 body.racing .h-display .out{-webkit-text-stroke-color:var(--ink)}
 .g-hero{position:relative;min-height:min(92vh,860px);display:flex;align-items:flex-end;overflow:hidden}
-.g-hero .bg{position:absolute;inset:-6%;background:url(img/hero-night.jpg) center 85%/cover;filter:saturate(1.15)}
+.g-hero .bg{position:absolute;inset:-6%;background:url(img/hero-night.jpg) center 70%/cover;filter:saturate(1.15)}
 .g-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,12,15,.2) 0%,rgba(12,12,15,.15) 40%,#0c0c0f 96%),linear-gradient(90deg,rgba(12,12,15,.94),rgba(12,12,15,.55) 55%,transparent 82%)}
 .g-hero .wrap{position:relative;z-index:1;padding-bottom:64px;width:100%}
 .speed{position:absolute;inset:0;z-index:1;pointer-events:none;background:repeating-linear-gradient(100deg,transparent 0 46px,rgba(215,38,46,.0) 46px 47px);mask:linear-gradient(90deg,#000,transparent 70%)}
