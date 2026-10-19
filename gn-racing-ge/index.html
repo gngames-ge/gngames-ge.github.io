@@ -10,6 +10,17 @@
 <link rel="icon" href="../img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Inter:wght@400;600;700&family=Noto+Sans+Georgian:wdth,wght@62.5..100,400..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
+<style>
+.cars{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.car{margin:0;padding:10px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);text-align:center}
+.car img{width:100%;height:auto;display:block}
+.car figcaption{display:flex;flex-direction:column;gap:2px;margin-top:6px;font-size:13px}
+.car figcaption span{opacity:.55;font-size:11px;letter-spacing:.08em}
+.faq details{padding:14px 18px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:600}
+.faq p{opacity:.85;line-height:1.6;margin:10px 0 0}
+.cta{text-align:center;padding:40px 0 64px}
+</style>
 </head>
 <body class="racing">
 <header class="top"><div class="wrap">
@@ -51,8 +62,50 @@
       <div class="g-ctrl"><button data-scroll="prev" aria-label="Previous">←</button><button data-scroll="next" aria-label="Next">→</button></div></div>
     <div class="gallery rv"><figure><img src="../img/shot1.jpg" alt="GN Racing GE screenshot 1" loading="lazy"></figure><figure><img src="../img/shot2.jpg" alt="GN Racing GE screenshot 2" loading="lazy"></figure><figure><img src="../img/shot3.jpg" alt="GN Racing GE screenshot 3" loading="lazy"></figure><figure><img src="../img/shot4.jpg" alt="GN Racing GE screenshot 4" loading="lazy"></figure><figure><img src="../img/shot5.jpg" alt="GN Racing GE screenshot 5" loading="lazy"></figure><figure><img src="../img/shot6.jpg" alt="GN Racing GE screenshot 6" loading="lazy"></figure><figure><img src="../img/shot7.jpg" alt="GN Racing GE screenshot 7" loading="lazy"></figure></div>
   </section>
+    <section class="sec">
+    <div class="sec-head rv"><div><span class="num">03</span><h2><span data-l="en">Cars</span><span data-l="ka">მანქანები</span><span data-l="ru">Машины</span></h2></div></div>
+    <div class="cars rv"><figure class="car"><img src="../img/cars/thunder-x.png" alt="THUNDER X" loading="lazy"><figcaption><b>THUNDER X</b><span>TUNER</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/kestrel-gtr.png" alt="KESTREL GTR" loading="lazy"><figcaption><b>KESTREL GTR</b><span>TUNER</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/blaze-r.png" alt="BLAZE R" loading="lazy"><figcaption><b>BLAZE R</b><span>SPORT</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/zt-7.png" alt="ZT-7" loading="lazy"><figcaption><b>ZT-7</b><span>TUNER</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/horizon.png" alt="HORIZON" loading="lazy"><figcaption><b>HORIZON</b><span>MUSCLE</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/vortex.png" alt="VORTEX" loading="lazy"><figcaption><b>VORTEX</b><span>MUSCLE</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/apex.png" alt="APEX" loading="lazy"><figcaption><b>APEX</b><span>SPORT</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/phoenix.png" alt="PHOENIX" loading="lazy"><figcaption><b>PHOENIX</b><span>TUNER</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/titanos.png" alt="TITANOS" loading="lazy"><figcaption><b>TITANOS</b><span>TUNER</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/raven.png" alt="RAVEN" loading="lazy"><figcaption><b>RAVEN</b><span>HYPERCAR</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/krait-s.png" alt="KRAIT S" loading="lazy"><figcaption><b>KRAIT S</b><span>HYPERCAR</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/stormbringer.png" alt="STORMBRINGER" loading="lazy"><figcaption><b>STORMBRINGER</b><span>HYPERCAR</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/novus.png" alt="NOVUS" loading="lazy"><figcaption><b>NOVUS</b><span>MUSCLE</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/umbra.png" alt="UMBRA" loading="lazy"><figcaption><b>UMBRA</b><span>SPORT</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/outlier.png" alt="OUTLIER" loading="lazy"><figcaption><b>OUTLIER</b><span>SPORT</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/wisp.png" alt="WISP" loading="lazy"><figcaption><b>WISP</b><span>MUSCLE</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/asp-gt.png" alt="ASP GT" loading="lazy"><figcaption><b>ASP GT</b><span>SPORT</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/onyx.png" alt="ONYX" loading="lazy"><figcaption><b>ONYX</b><span>MUSCLE</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/squall.png" alt="SQUALL" loading="lazy"><figcaption><b>SQUALL</b><span>SPORT</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/sabre.png" alt="SABRE" loading="lazy"><figcaption><b>SABRE</b><span>MUSCLE</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/parallax.png" alt="PARALLAX" loading="lazy"><figcaption><b>PARALLAX</b><span>HYPERCAR</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/shade.png" alt="SHADE" loading="lazy"><figcaption><b>SHADE</b><span>HYPERCAR</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/comet.png" alt="COMET" loading="lazy"><figcaption><b>COMET</b><span>HYPERCAR</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/obsidian.png" alt="OBSIDIAN" loading="lazy"><figcaption><b>OBSIDIAN</b><span>HYPERCAR</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/halcyon.png" alt="HALCYON" loading="lazy"><figcaption><b>HALCYON</b><span>SPORT</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/leviathan.png" alt="LEVIATHAN" loading="lazy"><figcaption><b>LEVIATHAN</b><span>MUSCLE</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/zenith.png" alt="ZENITH" loading="lazy"><figcaption><b>ZENITH</b><span>SPORT</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/paragon.png" alt="PARAGON" loading="lazy"><figcaption><b>PARAGON</b><span>HYPERCAR</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/regalia.png" alt="REGALIA" loading="lazy"><figcaption><b>REGALIA</b><span>HYPERCAR</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/retro-86.png" alt="RETRO 86" loading="lazy"><figcaption><b>RETRO 86</b><span>TUNER</span></figcaption></figure>
+<figure class="car"><img src="../img/cars/baron.png" alt="BARON" loading="lazy"><figcaption><b>BARON</b><span>SPORT</span></figcaption></figure></div>
+  </section>
   <section class="sec">
-    <div class="sec-head rv"><div><span class="num">03</span><h2><span data-l="en">Your data</span><span data-l="ka">შენი მონაცემები</span><span data-l="ru">Ваши данные</span></h2></div></div>
+    <div class="sec-head rv"><div><span class="num">04</span><h2><span data-l="en">Tracks</span><span data-l="ka">ტრასები</span><span data-l="ru">Трассы</span></h2></div></div>
+    <div class="feat"><article class="rv"><h3>DESERT</h3><p><span data-l="en">Sun-baked sand and long sweepers</span><span data-l="ka">მზით გამომწვარი ქვიშა და გრძელი მოსახვევები</span><span data-l="ru">Раскалённый песок и длинные дуги</span></p></article><article class="rv"><h3>AUTUMN</h3><p><span data-l="en">Golden forest, tight hairpins</span><span data-l="ka">ოქროსფერი ტყე და მკვეთრი შპილკები</span><span data-l="ru">Золотой лес и крутые шпильки</span></p></article><article class="rv"><h3>SNOW</h3><p><span data-l="en">White peaks, low grip</span><span data-l="ka">თეთრი მწვერვალები, სუსტი მოჭიდება</span><span data-l="ru">Белые вершины, мало сцепления</span></p></article><article class="rv"><h3>SUNSET</h3><p><span data-l="en">Warm light, fast straights</span><span data-l="ka">თბილი შუქი, სწრაფი სწორი მონაკვეთები</span><span data-l="ru">Тёплый свет, быстрые прямые</span></p></article><article class="rv"><h3>SNOWFALL</h3><p><span data-l="en">Falling snow and fog</span><span data-l="ka">ცვივა თოვლი და ნისლი</span><span data-l="ru">Снегопад и туман</span></p></article><article class="rv"><h3>RAIN</h3><p><span data-l="en">Wet asphalt, spray and reflections</span><span data-l="ka">სველი ასფალტი, შხეფები და ანარეკლები</span><span data-l="ru">Мокрый асфальт, брызги и отражения</span></p></article><article class="rv"><h3>NIGHT</h3><p><span data-l="en">Neon, stadium lights and lamps</span><span data-l="ka">ნეონი, სტადიონის შუქები და ფარები</span><span data-l="ru">Неон, прожекторы и фары</span></p></article><article class="rv"><h3>VALLEY GP</h3><p><span data-l="en">Palm-lined Grand Prix circuit</span><span data-l="ka">პალმებიანი გრან-პრის ტრასა</span><span data-l="ru">Трасса Гран-при среди пальм</span></p></article></div>
+  </section>
+  <section class="sec">
+    <div class="sec-head rv"><div><span class="num">05</span><h2><span data-l="en">FAQ</span><span data-l="ka">ხშირი კითხვები</span><span data-l="ru">Вопросы</span></h2></div></div>
+    <div class="faq"><details class="rv"><summary><span data-l="en">Is the game free?</span><span data-l="ka">თამაში უფასოა?</span><span data-l="ru">Игра бесплатная?</span></summary><p><span data-l="en">Yes. No real-money purchases: coins are earned by racing, drifting and optional ads.</span><span data-l="ka">კი. ნამდვილი ფულით ყიდვა არ არის: ქოინებს რბოლით, დრიფტით და სურვილისამებრ რეკლამით აგროვებ.</span><span data-l="ru">Да. Покупок за деньги нет: монеты зарабатываются гонками, дрифтом и рекламой по желанию.</span></p></details><details class="rv"><summary><span data-l="en">How do I play online?</span><span data-l="ka">როგორ ვითამაშო ონლაინ?</span><span data-l="ru">Как играть онлайн?</span></summary><p><span data-l="en">Tap ONLINE in the main menu: quick race, rooms list, or a private room with a code for friends.</span><span data-l="ka">მთავარ მენიუში დააჭირე ONLINE: სწრაფი რბოლა, ოთახების სია ან დახურული ოთახი კოდით მეგობრებისთვის.</span><span data-l="ru">Нажмите ONLINE в меню: быстрая гонка, список комнат или закрытая комната с кодом для друзей.</span></p></details><details class="rv"><summary><span data-l="en">Will I lose my progress after updating?</span><span data-l="ka">განახლების მერე პროგრესი დამეკარგება?</span><span data-l="ru">Пропадёт ли прогресс после обновления?</span></summary><p><span data-l="en">No. Coins, cars and upgrades stay, and progress is backed up to the cloud.</span><span data-l="ka">არა. ქოინები, მანქანები და გაუმჯობესებები რჩება, პროგრესი ღრუბელშიც ინახება.</span><span data-l="ru">Нет. Монеты, машины и улучшения сохраняются, прогресс копируется в облако.</span></p></details><details class="rv"><summary><span data-l="en">How do clubs and the tournament work?</span><span data-l="ka">როგორ მუშაობს კლუბები და ტურნირი?</span><span data-l="ru">Как работают клубы и турнир?</span></summary><p><span data-l="en">Create or join a club with a code and add drift points together. The weekly tournament is free and pays coins by your place every Sunday.</span><span data-l="ka">შექმენი ან შედი კლუბში კოდით და ერთად დააგროვეთ დრიფტის ქულები. კვირის ტურნირი უფასოა და ყოველ კვირა დღეს ადგილის მიხედვით ქოინებს იხდის.</span><span data-l="ru">Создайте клуб или вступите по коду и набирайте очки дрифта вместе. Еженедельный турнир бесплатный и каждое воскресенье платит монеты за место.</span></p></details><details class="rv"><summary><span data-l="en">Which phones are supported?</span><span data-l="ka">რომელ ტელეფონებზე მუშაობს?</span><span data-l="ru">Какие телефоны поддерживаются?</span></summary><p><span data-l="en">Android 10 or newer (64-bit). Graphics adjust automatically, or choose them in settings.</span><span data-l="ka">Android 10 ან უფრო ახალი (64-ბიტიანი). გრაფიკა ავტომატურად ერგება, ან პარამეტრებში აირჩიე.</span><span data-l="ru">Android 10 и новее (64 бит). Графика настраивается сама или в настройках.</span></p></details></div>
+  </section>
+  <section class="sec">
+    <div class="sec-head rv"><div><span class="num">06</span><h2><span data-l="en">Your data</span><span data-l="ka">შენი მონაცემები</span><span data-l="ru">Ваши данные</span></h2></div></div>
     <div class="legal-links">
       <a class="rv" href="privacy.html">Privacy Policy <span class="arr"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
       <a class="rv" href="terms.html">Terms of Use <span class="arr"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
@@ -60,6 +113,7 @@
     </div>
   </section>
 </main>
+<div class="cta rv"><a class="badge-play" href="https://play.google.com/store/apps/details?id=com.GNGames2020.GNRacingGE" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"><path d="M4 3.5v17l9-8.5-9-8.5Z" fill="#00d7fe"/><path d="m13 12 3.2-3L5 2.6 13 12Z" fill="#00f076"/><path d="m13 12 3.2 3L5 21.4 13 12Z" fill="#ff3a44"/><path d="m16.2 9 3.6 2c.8.5.8 1.5 0 2l-3.6 2L13 12l3.2-3Z" fill="#ffd400"/></svg><span><small>GET IT ON</small><b>Google Play</b></span></a></div>
 <footer><div class="wrap">
   <span>© <span id="year">2026</span> GN Games · <span data-l="en">Made in Georgia</span><span data-l="ka">შექმნილია საქართველოში</span><span data-l="ru">Сделано в Грузии</span></span>
   <nav><a href="../gn-racing-ge/privacy.html">Privacy</a><a href="../gn-racing-ge/terms.html">Terms</a><a href="../gn-racing-ge/delete-data.html"><span data-l="en">Delete data</span><span data-l="ka">მონაცემების წაშლა</span><span data-l="ru">Удаление данных</span></a><a href="mailto:gngames2020@gmail.com">gngames2020@gmail.com</a></nav>
