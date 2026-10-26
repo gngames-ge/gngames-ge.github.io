@@ -20,6 +20,12 @@
 .faq summary{cursor:pointer;font-weight:600}
 .faq p{opacity:.85;line-height:1.6;margin:10px 0 0}
 .st{display:grid;gap:3px;margin-top:8px}.st i{display:grid;grid-template-columns:28px 1fr;align-items:center;gap:6px;font-style:normal;font-size:10px;opacity:.8}.st em{font-style:normal;letter-spacing:.06em}.st i:before{content:"";grid-column:2;grid-row:1;height:4px;border-radius:2px;background:rgba(255,255,255,.1)}.st u{grid-column:2;grid-row:1;height:4px;border-radius:2px;background:#e8343c}
+.car{cursor:pointer;transition:transform .15s}.car:hover{transform:translateY(-3px);border-color:#e8343c}
+#cm{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;align-items:center;justify-content:center;z-index:99;padding:16px}
+#cm.on{display:flex}#cm .box{background:#15151a;border:1px solid rgba(255,255,255,.12);border-radius:18px;max-width:560px;width:100%;padding:22px;position:relative;max-height:90vh;overflow:auto}
+#cm img{width:100%;border-radius:12px;background:#0b0b0e}#cm h3{margin:12px 0 2px;font-size:28px}#cm .cls{color:#e8343c;letter-spacing:.1em;font-size:13px}
+#cm .row{display:grid;grid-template-columns:110px 1fr 40px;gap:10px;align-items:center;margin:8px 0;font-size:14px}#cm .bar{height:8px;border-radius:4px;background:rgba(255,255,255,.1);overflow:hidden}#cm .bar b{display:block;height:100%;background:#e8343c}
+#cm ul{margin:12px 0 0 18px;line-height:1.7;opacity:.85;font-size:14px}#cm .x{position:absolute;right:14px;top:10px;background:none;border:0;color:#fff;font-size:26px;cursor:pointer}
 .cta{text-align:center;padding:40px 0 64px}
 </style>
 </head>
@@ -124,5 +130,19 @@
   <nav><a href="../gn-racing-ge/privacy.html">Privacy</a><a href="../gn-racing-ge/terms.html">Terms</a><a href="../gn-racing-ge/delete-data.html"><span data-l="en">Delete data</span><span data-l="ka">მონაცემების წაშლა</span><span data-l="ru">Удаление данных</span></a><a href="mailto:gngames2020@gmail.com">gngames2020@gmail.com</a></nav>
 </div></footer>
 <script src="../site.js"></script>
+<div id="cm"><div class="box"><button class="x" aria-label="Close">&times;</button><img alt=""><h3></h3><div class="cls"></div><div class="stats"></div><ul></ul></div></div>
+<script>
+(function(){var cm=document.getElementById('cm');if(!cm)return;
+var T={en:{l:['Speed','Acceleration','Handling','Braking'],f:['PRO KITS: Street Racer, GT Champion, Drift King, Time Attack, Pro Drift, Street Drift, GT Race, Clean OEM+','Body kit parts: front & rear bumper, skirts, hood, wing, roof','Rims S–XL, rim colour, tyre width, camber, track width, ride height','Paint finishes and full livery editor','Engine, turbo, gearbox, suspension, ECU and drift tuning','Xenon, neon, custom plates']},
+ka:{l:['სიჩქარე','აჩქარება','მართვა','დამუხრუჭება'],f:['PRO KITS: Street Racer, GT Champion, Drift King, Time Attack, Pro Drift, Street Drift, GT Race, Clean OEM+','ბოდი კიტის ნაწილები: წინა და უკანა ბამპერი, სკირტები, კაპოტი, ფრთა, სახურავი','დისკები S–XL, დისკის ფერი, საბურავის სიგანე, ქემბერი, ლიანდაგი, სიმაღლე','საღებავის საფარები და ლივრეის რედაქტორი','ძრავი, ტურბო, კოლოფი, საკიდი, ECU და დრიფტის გაწყობა','ქსენონი, ნეონი, საკუთარი ნომრები']},
+ru:{l:['Скорость','Разгон','Управляемость','Торможение'],f:['PRO KITS: Street Racer, GT Champion, Drift King, Time Attack, Pro Drift, Street Drift, GT Race, Clean OEM+','Детали обвеса: передний и задний бампер, пороги, капот, крыло, крыша','Диски S–XL, цвет дисков, ширина шин, развал, колея, высота','Покрытия краски и редактор ливрей','Двигатель, турбо, КПП, подвеска, ЭБУ и настройка дрифта','Ксенон, неон, свои номера']}};
+function lang(){var a=document.documentElement.lang||document.body.getAttribute('data-lang')||(document.querySelector('.langs .on,.langs [aria-pressed=true]')||{}).textContent||'en';a=(a||'en').toLowerCase().trim();return T[a]?a:'en';}
+document.querySelectorAll('.car').forEach(function(c){c.addEventListener('click',function(){var t=T[lang()];var w=[].map.call(c.querySelectorAll('.st u'),function(u){return parseInt(u.style.width)||0;});
+cm.querySelector('img').src=c.querySelector('img').src;cm.querySelector('h3').textContent=c.querySelector('b').textContent;cm.querySelector('.cls').textContent=c.querySelector('figcaption span').textContent;
+cm.querySelector('.stats').innerHTML=w.map(function(v,i){return '<div class="row"><span>'+t.l[i]+'</span><div class="bar"><b style="width:'+v+'%"></b></div><span>'+v+'</span></div>';}).join('');
+cm.querySelector('ul').innerHTML=t.f.map(function(x){return '<li>'+x+'</li>';}).join('');cm.classList.add('on');});});
+cm.addEventListener('click',function(e){if(e.target===cm||e.target.classList.contains('x'))cm.classList.remove('on');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')cm.classList.remove('on');});})();
+</script>
 </body>
 </html>
