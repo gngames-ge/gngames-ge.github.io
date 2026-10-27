@@ -72,7 +72,7 @@ html[lang="ka"] .h-display{letter-spacing:0;font-stretch:condensed}
 
 /* games bento */
 .bento{display:grid;gap:18px;grid-template-columns:1fr}
-@media (min-width:820px){.bento{grid-template-columns:repeat(6,1fr)}.g-race{grid-column:span 6}.g-grydo,.g-nockle,.g-magnoro{grid-column:span 2}.g-dttr,.g-stc{grid-column:span 3}}
+@media (min-width:820px){.bento{grid-template-columns:repeat(6,1fr)}.g-race{grid-column:span 6}.g-grydo,.g-nockle,.g-magnoro{grid-column:span 2}}
 .tile{--c:#111;--fg:#fff;position:relative;border-radius:var(--radius);overflow:hidden;background:var(--c);color:var(--fg);text-decoration:none;min-height:360px;display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
 .tile:hover{box-shadow:0 30px 60px -30px rgba(20,18,15,.55)}
 .tile .art{position:absolute;inset:0;z-index:-1;background-size:cover;background-position:center;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
@@ -86,20 +86,16 @@ html[lang="ka"] .h-display{letter-spacing:0;font-stretch:condensed}
 .tile .go{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--fg);color:var(--c);flex:none;transition:transform .3s}
 .tile:hover .go{transform:rotate(-45deg)}
 .g-race{--c:#0b0b0e;min-height:520px}
-.g-race .art{background-image:linear-gradient(90deg,rgba(11,11,14,.92) 0%,rgba(11,11,14,.55) 45%,rgba(11,11,14,0) 75%),url(img/grid.jpg)}
+.g-race .art{background-image:linear-gradient(90deg,rgba(11,11,14,.92) 0%,rgba(11,11,14,.55) 45%,rgba(11,11,14,0) 75%),url(img/hero-night.jpg);background-position:center 70%}
 .g-race h3{font-size:clamp(30px,4vw,52px)}
 .g-race .body{padding:36px}
-.g-grydo,.g-nockle,.g-magnoro,.g-dttr,.g-stc{min-height:420px}
-.g-grydo .art,.g-nockle .art,.g-magnoro .art,.g-dttr .art,.g-stc .art{background-size:100% auto;background-position:top center;background-repeat:no-repeat}
+.g-grydo,.g-nockle,.g-magnoro{min-height:420px}
+.g-grydo .art,.g-nockle .art,.g-magnoro .art{background-size:100% auto;background-position:top center;background-repeat:no-repeat}
 .g-grydo{--c:#2b3578}.g-grydo .art{background-image:linear-gradient(0deg,#2b3578 50%,rgba(43,53,120,0) 66%),url(img/grydo-feature.jpg)}
 .g-nockle{--c:#efe9dc;--fg:#1d1b17}.g-nockle .art{background-image:linear-gradient(0deg,#efe9dc 50%,rgba(239,233,220,0) 66%),url(img/nockle-feature.jpg)}
 .g-nockle .tag{background:rgba(29,27,23,.08)}
 .g-magnoro{--c:#1d2333}.g-magnoro .art{background-image:linear-gradient(0deg,#1d2333 50%,rgba(29,35,51,0) 66%),url(img/magnoro-feature.jpg)}
-.g-dttr{--c:#0a0507}.g-dttr .art{background-image:linear-gradient(0deg,#0a0507 50%,rgba(10,5,7,0) 66%),url(img/dttr-feature.jpg)}
-.g-dttr .tag{background:rgba(255,40,50,.18)}
-.g-stc{--c:#021c47}.g-stc .art{background-image:linear-gradient(0deg,#021c47 50%,rgba(2,28,71,0) 66%),url(img/stc-feature.jpg)}
-.g-stc .tag{background:rgba(255,204,0,.2)}
-@media (max-width:819px){.g-grydo .art,.g-nockle .art,.g-magnoro .art,.g-dttr .art,.g-stc .art{background-size:cover}}
+@media (max-width:819px){.g-grydo .art,.g-nockle .art,.g-magnoro .art{background-size:cover}}
 .tile .links{display:flex;gap:14px;margin-top:12px;font-size:14px}
 .tile .links a{opacity:.8}
 
