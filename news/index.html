@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>News · GN Games</title>
+<meta name="description" content="News from GN Games: GN Racing GE updates, new cars, new modes and what we are building next.">
+<meta property="og:title" content="News · GN Games"><meta property="og:description" content="GN Racing GE updates, new cars and modes."><meta property="og:image" content="https://gngames-ge.github.io/img/news/kaizen-ta.jpg">
+<meta name="theme-color" content="#0c0c0f">
+<link rel="icon" href="../img/favicon.png">
+<link rel="alternate" type="application/rss+xml" title="GN Games News" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Inter:wght@400;600;700&family=Noto+Sans+Georgian:wdth,wght@62.5..100,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+.news{display:grid;gap:28px;margin:8px 0 72px}
+.post{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:center;padding:22px;border-radius:22px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
+.post .pics{display:grid;gap:10px}
+.post .pics.two{grid-template-columns:1fr 1fr}
+.post img{width:100%;border-radius:14px;display:block;aspect-ratio:16/9;object-fit:cover}
+.post time{font:600 13px Inter,sans-serif;opacity:.6;letter-spacing:.04em}
+.post h2{font-family:Unbounded,'Noto Sans Georgian',sans-serif;font-size:clamp(22px,3vw,32px);line-height:1.15;margin:8px 0 12px}
+.post p{line-height:1.6;opacity:.85;margin:0 0 10px}
+.fb-follow{margin:-40px 0 72px;font:600 16px Inter,sans-serif}.fb-follow a{color:inherit}
+.post ul{margin:6px 0 0 18px;line-height:1.7;opacity:.85}
+@media (max-width:820px){.post{grid-template-columns:1fr;padding:16px}}
+</style>
+</head>
+<body class="racing">
+<header class="top"><div class="wrap">
+  <a class="logo" href="../"><i><b>GN</b></i>GAMES</a>
+  <nav class="nav">
+    <a href="../#games"><span data-l="en">Games</span><span data-l="ka">თამაშები</span><span data-l="ru">Игры</span></a>
+    <a href="./"><span data-l="en">News</span><span data-l="ka">სიახლეები</span><span data-l="ru">Новости</span></a>
+    <a href="../#contact"><span data-l="en">Contact</span><span data-l="ka">კონტაქტი</span><span data-l="ru">Контакты</span></a>
+  </nav>
+  <div class="langs"><button data-set="en">EN</button><button data-set="ka">KA</button><button data-set="ru">RU</button></div>
+</div></header>
+
+<main class="wrap">
+  <section class="hero" style="padding-bottom:12px">
+    <span class="eyebrow"><i class="cross"></i><span data-l="en">News · GN Racing GE</span><span data-l="ka">სიახლეები · GN Racing GE</span><span data-l="ru">Новости · GN Racing GE</span></span>
+    <h1 class="h-display"><span data-l="en">What's <span class="red">new</span>.</span><span data-l="ka">რა არის <span class="red">ახალი.</span></span><span data-l="ru">Что <span class="red">нового.</span></span></h1>
+  </section>
+
+  <section class="news" id="news-list">
+    <noscript><p>News needs JavaScript. RSS: <a href="feed.xml">feed.xml</a></p></noscript>
+  </section>
+  <p class="fb-follow"><a href="https://www.facebook.com/profile.php?id=61595503049750" target="_blank" rel="noopener"><span data-l="en">Follow GN Racing GE on Facebook</span><span data-l="ka">გამოგვყევით Facebook-ზე</span><span data-l="ru">Мы в Facebook</span> &rarr;</a></p>
+</main>
+
+<footer><div class="wrap">
+  <span>© <span id="year">2026</span> GN Games · <span data-l="en">Made in Georgia</span><span data-l="ka">შექმნილია საქართველოში</span><span data-l="ru">Сделано в Грузии</span></span>
+  <nav><a href="https://www.facebook.com/profile.php?id=61595503049750" target="_blank" rel="noopener">Facebook</a><a href="feed.xml">RSS</a><a href="../gn-racing-ge/privacy.html">Privacy</a><a href="../gn-racing-ge/terms.html">Terms</a><a href="mailto:gngames2020@gmail.com">gngames2020@gmail.com</a></nav>
+</div></footer>
+<script>
+(function () {
+  var L = ["en", "ka", "ru"];
+  function esc(t) { return String(t || "").replace(/[&<>"]/g, function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+  function multi(o, tag) {
+    o = o || {};
+    var have = L.filter(function (l) { return o[l]; });
+    if (have.length === 1) return "<" + tag + ">" + esc(o[have[0]]).replace(/\n/g, "<br>") + "</" + tag + ">";
+    return L.map(function (l) { return o[l] ? "<" + tag + ' data-l="' + l + '">' + esc(o[l]).replace(/\n/g, "<br>") + "</" + tag + ">" : ""; }).join("");
+  }
+  fetch("posts.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (posts) {
+    var html = posts.filter(function (p) { return !p.draft; }).map(function (p) {
+      var imgs = p.images || [];
+      var pics = imgs.length ? '<div class="pics' + (imgs.length > 1 ? " two" : "") + '">' + imgs.map(function (i) { return '<img loading="lazy" src="' + esc(i) + '" alt="">'; }).join("") + "</div>" : "";
+      var d = p.date.split("-");
+      var fb = p.link ? '<p><a href="' + esc(p.link) + '" target="_blank" rel="noopener">Facebook &rarr;</a></p>' : "";
+      return '<article class="post" id="' + esc(p.id) + '">' + pics + "<div><time datetime=\"" + p.date + "\">" + d[2] + "." + d[1] + "." + d[0] + "</time>" +
+        multi(p.title, "h2") + multi(p.body, "p") + fb + "</div></article>";
+    }).join("");
+    document.getElementById("news-list").innerHTML = html;
+    if (location.hash) { var el = document.querySelector(location.hash); if (el) el.scrollIntoView(); }
+  });
+})();
+</script>
+<script src="../site.js"></script>
+</body>
+</html>

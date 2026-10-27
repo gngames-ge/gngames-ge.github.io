@@ -1,0 +1,115 @@
+[
+  {
+    "id": "whats-next",
+    "date": "2026-10-27",
+    "facebook": true,
+    "title": {
+      "en": "What we're building now",
+      "ka": "რაზე ვმუშაობთ ახლა",
+      "ru": "Над чем мы работаем сейчас"
+    },
+    "body": {
+      "en": "20 new wheels inspired by real tuning culture, with 5 picks for every car at its real size. Every customizable car is getting the same full body-kit treatment as RETRO 86. And a PC version for Google Play Games is in the works: keyboard, gamepad and fully rebindable controls.",
+      "ka": "20 ახალი დისკი, შთაგონებული ნამდვილი ტიუნინგის კულტურით: ყოველ მანქანას 5 რჩეული დისკი მისი ნამდვილი ზომით. ყველა მანქანა, რომლის მორგებაც შეიძლება, RETRO 86-ის მსგავს სრულ ბოდიკიტებს მიიღებს. ასევე ვმუშაობთ PC ვერსიაზე Google Play Games-ისთვის: კლავიატურა, ჯოისტიკი და ღილაკების სრული გადაწყობა.",
+      "ru": "20 новых дисков в духе настоящей тюнинг-культуры, по 5 рекомендованных для каждой машины в её настоящем размере. Все машины, которые можно тюнинговать, получат такие же полные обвесы, как RETRO 86. А ещё мы делаем PC-версию для Google Play Games: клавиатура, геймпад и полная переназначаемость кнопок."
+    },
+    "images": [
+      "../img/news/kits-grid.jpg"
+    ]
+  },
+  {
+    "id": "thunder-x-kits",
+    "date": "2026-10-27",
+    "facebook": true,
+    "title": {
+      "en": "THUNDER X: five new body kits",
+      "ka": "THUNDER X: ხუთი ახალი ბოდიკიტი",
+      "ru": "THUNDER X: пять новых обвесов"
+    },
+    "body": {
+      "en": "Five packages built from real-world tuning styles: OEM+ SPORT, STREET, WIDEBODY, TRACK GT and EXTREME SHOW. Every package comes with matching wheels that fill the arches.",
+      "ka": "ხუთი პაკეტი, შექმნილი ნამდვილი ტიუნინგის სტილებით: OEM+ SPORT, STREET, WIDEBODY, TRACK GT და EXTREME SHOW. ყოველ პაკეტს თავისი დისკები ახლავს, რომლებიც თაღებს ზუსტად ავსებს.",
+      "ru": "Пять пакетов в стилях настоящего тюнинга: OEM+ SPORT, STREET, WIDEBODY, TRACK GT и EXTREME SHOW. К каждому пакету подобраны диски, которые точно заполняют арки."
+    },
+    "images": [
+      "../img/news/thunderx-kit.jpg"
+    ]
+  },
+  {
+    "id": "retro86-kits",
+    "date": "2026-10-27",
+    "facebook": true,
+    "title": {
+      "en": "RETRO 86: eight tuning packages",
+      "ka": "RETRO 86: რვა ტიუნინგის პაკეტი",
+      "ru": "RETRO 86: восемь тюнинг-пакетов"
+    },
+    "body": {
+      "en": "Our free starter car gets the full treatment: GROUP A, DRIFT SPEC, CLUB SPORT and five more packages. New hoods (vented, louvred, real carbon weave), riveted over-fenders, a full carbon diffuser and new wings. Every part can also be fitted on its own.",
+      "ka": "ჩვენი უფასო საწყისი მანქანა სრულ ტიუნინგს იღებს: GROUP A, DRIFT SPEC, CLUB SPORT და კიდევ ხუთი პაკეტი. ახალი კაპოტები (ვენტილაციით, ჟალუზებით, ნამდვილი კარბონის ნახატით), მოქლონებიანი ფართო ფრთები, კარბონის სრული დიფუზორი და ახალი ფრთები. ყოველი ნაწილი ცალკეც ყენდება.",
+      "ru": "Наша бесплатная стартовая машина получает полный тюнинг: GROUP A, DRIFT SPEC, CLUB SPORT и ещё пять пакетов. Новые капоты (с вентиляцией, с жалюзи, с настоящим карбоновым плетением), клёпаные расширители, полный карбоновый диффузор и новые антикрылья. Каждую деталь можно поставить и отдельно."
+    },
+    "images": [
+      "../img/news/retro86-drift.jpg",
+      "../img/news/retro86-groupa.jpg",
+      "../img/news/retro86-drift-rear.jpg"
+    ]
+  },
+  {
+    "id": "kaizen",
+    "date": "2026-10-16",
+    "facebook": false,
+    "title": {
+      "en": "Meet KAIZEN: free for everyone",
+      "ka": "გაიცანი KAIZEN: უფასო ყველასთვის",
+      "ru": "Встречайте KAIZEN: бесплатно для всех"
+    },
+    "body": {
+      "en": "Our former premium sedan has a new name, and it's free in update 1.4. It gets three new body kits, including a TIME ATTACK kit with a flat front splitter, canards and a 9-fin rear diffuser.",
+      "ka": "ჩვენს ყოფილ პრემიუმ სედანს ახალი სახელი აქვს და 1.4 განახლებაში უფასო იქნება. მას სამი ახალი ბოდიკიტი ემატება, მათ შორის TIME ATTACK: ბრტყელი წინა ფარფლით, გვერდითი ფრთებით და უკანა დიფუზორით 9 ფარფლით.",
+      "ru": "Наш бывший премиум-седан получил новое имя и станет бесплатным в обновлении 1.4. Он получает три новых обвеса, включая TIME ATTACK с плоским передним сплиттером, канардами и задним диффузором с 9 рёбрами."
+    },
+    "images": [
+      "../img/news/kaizen-ta.jpg",
+      "../img/news/kaizen-ta-rear.jpg"
+    ]
+  },
+  {
+    "id": "classics",
+    "date": "2026-10-15",
+    "facebook": false,
+    "title": {
+      "en": "Three classics join the garage",
+      "ka": "გარაჟში სამი კლასიკა შემოდის",
+      "ru": "В гараж приезжают три классики"
+    },
+    "body": {
+      "en": "RETRO 86, BARON and STRIKER bring the late-80s and 90s to GN Racing GE. RETRO 86 is the new free starter car. Each one gets its own kits, stance and wheel sizes, plus realistic tail lamps.",
+      "ka": "RETRO 86, BARON და STRIKER 80-იანების ბოლოს და 90-იანების სტილს მოიტანს. RETRO 86 ახალი უფასო საწყისი მანქანა იქნება. თითოეულს ექნება საკუთარი კიტები, სტენსი, საბურავების ზომები და რეალისტური უკანა ფარები.",
+      "ru": "RETRO 86, BARON и STRIKER привносят конец 80-х и 90-е в GN Racing GE. RETRO 86 станет новой бесплатной стартовой машиной. У каждой свои обвесы, стэнс, размеры колёс и реалистичные задние фонари."
+    },
+    "images": [
+      "../img/news/retro86.jpg",
+      "../img/news/baron.jpg",
+      "../img/news/striker.jpg"
+    ]
+  },
+  {
+    "id": "online",
+    "date": "2026-10-14",
+    "facebook": false,
+    "title": {
+      "en": "Update 1.4: online racing is coming",
+      "ka": "1.4 განახლება: ონლაინ რბოლები მალე",
+      "ru": "Обновление 1.4: онлайн-гонки уже скоро"
+    },
+    "body": {
+      "en": "Our biggest update so far: live online races and rooms with friends, deeper drift angles and real-physics 360s, full stance, wheel sizes and tuning, xenon lights and your own plate with a neon frame, and a smaller install.",
+      "ka": "ჩვენი აქამდე ყველაზე დიდი განახლება: ონლაინ რბოლები და ოთახები მეგობრებთან, უფრო დიდი დრიფტის კუთხეები და ნამდვილი ფიზიკის 360, სრული სტენსი, საბურავების ზომები და ტიუნინგი, ქსენონის ფარები და შენი ნომერი ნეონის ჩარჩოთი, და უფრო მსუბუქი ინსტალაცია.",
+      "ru": "Наше самое большое обновление: онлайн-гонки и комнаты с друзьями, большие углы дрифта и честные 360 на физике, полный стэнс, размеры колёс и тюнинг, ксенон и свой номер с неоновой рамкой, а также меньший размер установки."
+    },
+    "images": [
+      "../img/hero.jpg"
+    ]
+  }
+]

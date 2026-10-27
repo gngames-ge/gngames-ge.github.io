@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+  <title>GN Games News</title>
+  <link>https://gngames-ge.github.io/news/</link>
+  <description>GN Racing GE updates, new cars and modes from GN Games, Georgia.</description>
+  <language>en</language>
+  <item>
+    <title>What we're building now</title>
+    <link>https://gngames-ge.github.io/news/#whats-next</link>
+    <guid isPermaLink="false">gn-news-whats-next</guid>
+    <pubDate>Tue, 27 Oct 2026 18:00:00 +0000</pubDate>
+    <description>20 new wheels inspired by real tuning culture, with 5 picks for every car at its real size. Every customizable car is getting the same full body-kit treatment as RETRO 86. And a PC version for Google Play Games is in the works: keyboard, gamepad and fully rebindable controls.</description>
+    <media:content url="https://gngames-ge.github.io/img/news/kits-grid.jpg" medium="image"/>
+  </item>
+  <item>
+    <title>THUNDER X: five new body kits</title>
+    <link>https://gngames-ge.github.io/news/#thunder-x-kits</link>
+    <guid isPermaLink="false">gn-news-thunder-x-kits</guid>
+    <pubDate>Tue, 27 Oct 2026 18:00:00 +0000</pubDate>
+    <description>Five packages built from real-world tuning styles: OEM+ SPORT, STREET, WIDEBODY, TRACK GT and EXTREME SHOW. Every package comes with matching wheels that fill the arches.</description>
+    <media:content url="https://gngames-ge.github.io/img/news/thunderx-kit.jpg" medium="image"/>
+  </item>
+  <item>
+    <title>RETRO 86: eight tuning packages</title>
+    <link>https://gngames-ge.github.io/news/#retro86-kits</link>
+    <guid isPermaLink="false">gn-news-retro86-kits</guid>
+    <pubDate>Tue, 27 Oct 2026 18:00:00 +0000</pubDate>
+    <description>Our free starter car gets the full treatment: GROUP A, DRIFT SPEC, CLUB SPORT and five more packages. New hoods (vented, louvred, real carbon weave), riveted over-fenders, a full carbon diffuser and new wings. Every part can also be fitted on its own.</description>
+    <media:content url="https://gngames-ge.github.io/img/news/retro86-drift.jpg" medium="image"/>
+  </item>
+  <item>
+    <title>Meet KAIZEN: free for everyone</title>
+    <link>https://gngames-ge.github.io/news/#kaizen</link>
+    <guid isPermaLink="false">gn-news-kaizen</guid>
+    <pubDate>Fri, 16 Oct 2026 18:00:00 +0000</pubDate>
+    <description>Our former premium sedan has a new name, and it's free in update 1.4. It gets three new body kits, including a TIME ATTACK kit with a flat front splitter, canards and a 9-fin rear diffuser.</description>
+    <media:content url="https://gngames-ge.github.io/img/news/kaizen-ta.jpg" medium="image"/>
+  </item>
+  <item>
+    <title>Three classics join the garage</title>
+    <link>https://gngames-ge.github.io/news/#classics</link>
+    <guid isPermaLink="false">gn-news-classics</guid>
+    <pubDate>Thu, 15 Oct 2026 18:00:00 +0000</pubDate>
+    <description>RETRO 86, BARON and STRIKER bring the late-80s and 90s to GN Racing GE. RETRO 86 is the new free starter car. Each one gets its own kits, stance and wheel sizes, plus realistic tail lamps.</description>
+    <media:content url="https://gngames-ge.github.io/img/news/retro86.jpg" medium="image"/>
+  </item>
+  <item>
+    <title>Update 1.4: online racing is coming</title>
+    <link>https://gngames-ge.github.io/news/#online</link>
+    <guid isPermaLink="false">gn-news-online</guid>
+    <pubDate>Wed, 14 Oct 2026 18:00:00 +0000</pubDate>
+    <description>Our biggest update so far: live online races and rooms with friends, deeper drift angles and real-physics 360s, full stance, wheel sizes and tuning, xenon lights and your own plate with a neon frame, and a smaller install.</description>
+    <media:content url="https://gngames-ge.github.io/img/hero.jpg" medium="image"/>
+  </item>
+</channel>
+</rss>
