@@ -161,6 +161,8 @@ body.racing .h-display .out{-webkit-text-stroke-color:var(--ink)}
 .gallery figure{margin:0;flex:0 0 min(78vw,620px);scroll-snap-align:start;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#000}
 .gallery img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .6s}
 .gallery figure:hover img{transform:scale(1.04)}
+.gallery.tall figure{flex:0 0 min(62vw,270px)}
+.gallery.tall img{aspect-ratio:9/16}
 .g-ctrl{display:flex;gap:10px}
 .g-ctrl button{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:none;color:var(--ink);cursor:pointer;font-size:20px}
 .g-ctrl button:hover{border-color:var(--red);color:var(--red)}
