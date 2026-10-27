@@ -1,0 +1,36 @@
+name: News sync (website <-> Facebook)
+
+on:
+  push:
+    paths: ["news/posts.json"]
+  schedule:
+    - cron: "17 * * * *"   # every hour: pull new Facebook posts onto the site
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fb-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Sync
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ vars.FB_PAGE_ID }}
+          FB_API_VERSION: ${{ vars.FB_API_VERSION }}
+        run: python .github/scripts/fb_sync.py
+      - name: Commit changes
+        run: |
+          git config user.name "gn-news-bot"
+          git config user.email "gngames2020@users.noreply.github.com"
+          git add news/posts.json news/feed.xml img/news/fb || true
+          git diff --cached --quiet || (git commit -m "news: sync with Facebook" && git push)
