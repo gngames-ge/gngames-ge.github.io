@@ -212,3 +212,14 @@ body.racing .h-display .out{-webkit-text-stroke-color:var(--ink)}
 .g-shadowshift h3{font-size:clamp(24px,2.4vw,32px)}
 .g-shadowshift .body{padding:24px}
 .g-shadowshift .tag{background:rgba(249,199,68,.22)}
+
+/* In-development row: SHADOW SHIFT, PUZZLE PATH, SKY RUSH side by side, styled like the three-per-row cards */
+@media (min-width:820px){.g-shadowshift,.g-puzzlepath,.g-skyrush{grid-column:span 2}}
+.g-shadowshift,.g-puzzlepath,.g-skyrush{min-height:420px}
+.g-shadowshift .art,.g-puzzlepath .art,.g-skyrush .art{background-size:100% auto;background-position:top center;background-repeat:no-repeat}
+.g-shadowshift .art{background-image:linear-gradient(0deg,#081527 50%,rgba(8,21,39,0) 66%),url(img/shadowshift-feature.jpg)}
+.g-puzzlepath .art{background-image:linear-gradient(0deg,#0a1f4a 50%,rgba(10,31,74,0) 66%),url(img/puzzlepath-feature.jpg)}
+.g-skyrush .art{background-image:linear-gradient(0deg,#06142e 50%,rgba(6,20,46,0) 66%),url(img/skyrush-feature.jpg)}
+.g-shadowshift h3,.g-puzzlepath h3,.g-skyrush h3{font-size:22px}
+@media (max-width:819px){.g-shadowshift .art,.g-puzzlepath .art,.g-skyrush .art{background-size:cover}}
+
