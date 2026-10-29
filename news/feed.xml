@@ -6,6 +6,14 @@
   <description>GN Racing GE updates, new cars and modes from GN Games, Georgia.</description>
   <language>en</language>
   <item>
+    <title>Work in progress: real interiors and 20 new wheels</title>
+    <link>https://gngames-ge.github.io/news/#interiors-wheels</link>
+    <guid isPermaLink="false">gn-news-interiors-wheels</guid>
+    <pubDate>Thu, 29 Oct 2026 18:00:00 +0000</pubDate>
+    <description>We're rebuilding every car's cabin at real proportions: period dashboards with live analogue needles for the classics, bucket seats and cages for race cars, modern screens for the newest cars. Also 20 brand-new wheel designs inspired by real tuning culture, each car getting the wheels that fit its body kits. Early work-in-progress previews, not final game graphics.</description>
+    <media:content url="https://gngames-ge.github.io/img/news/retro86-cabin.jpg" medium="image"/>
+  </item>
+  <item>
     <title>What we're building now</title>
     <link>https://gngames-ge.github.io/news/#whats-next</link>
     <guid isPermaLink="false">gn-news-whats-next</guid>

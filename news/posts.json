@@ -1,5 +1,24 @@
 [
   {
+    "id": "interiors-wheels",
+    "date": "2026-10-29",
+    "facebook": true,
+    "title": {
+      "en": "Work in progress: real interiors and 20 new wheels",
+      "ka": "მიმდინარე სამუშაო: ნამდვილი სალონები და 20 ახალი დისკი",
+      "ru": "В работе: настоящие салоны и 20 новых дисков"
+    },
+    "body": {
+      "en": "We're rebuilding every car's cabin at real proportions: period dashboards with live analogue needles for the classics, bucket seats and cages for race cars, modern screens for the newest cars. Also 20 brand-new wheel designs inspired by real tuning culture, each car getting the wheels that fit its body kits. Early work-in-progress previews, not final game graphics.",
+      "ka": "ყველა მანქანის სალონს ნამდვილ პროპორციებში თავიდან ვაწყობთ: კლასიკებს ეპოქის დაფა ცოცხალი ანალოგური ისრებით, სარბოლოებს ვედრო სავარძლები და კარკასი, თანამედროვეებს ახალი ეკრანები. ასევე 20 ახალი დისკი, ნამდვილი ტიუნინგის კულტურით შთაგონებული, და ყველა ბოდი კიტს თავისი შესაფერისი დისკი. ეს სამუშაო ესკიზებია და არა საბოლოო გრაფიკა.",
+      "ru": "Пересобираем салон каждой машины в реальных пропорциях: у классики приборные панели эпохи с живыми стрелками, у гоночных ковши и каркасы, у современных новые экраны. А ещё 20 новых дисков в духе настоящего тюнинга, и каждому обвесу свои диски. Это рабочие эскизы, не финальная графика."
+    },
+    "images": [
+      "../img/news/retro86-cabin.jpg",
+      "../img/news/wheels20.jpg"
+    ]
+  },
+  {
     "id": "whats-next",
     "date": "2026-10-27",
     "facebook": true,
