@@ -96,11 +96,8 @@ html[lang="ka"] .h-display{letter-spacing:0;font-stretch:condensed}
 .g-nockle .tag{background:rgba(29,27,23,.08)}
 .g-magnoro{--c:#1d2333}.g-magnoro .art{background-image:linear-gradient(0deg,#1d2333 50%,rgba(29,35,51,0) 66%),url(img/magnoro-feature.jpg)}
 .g-onechance{--c:#120b35}.g-onechance .art{background-image:linear-gradient(0deg,#120b35 50%,rgba(18,11,53,0) 66%),url(img/onechance-feature.jpg)}
-.g-onechance .tag{background:rgba(0,229,255,.18)}
 .g-dttr{--c:#0a0507}.g-dttr .art{background-image:linear-gradient(0deg,#0a0507 50%,rgba(10,5,7,0) 66%),url(img/dttr-feature.jpg)}
-.g-dttr .tag{background:rgba(255,40,50,.18)}
 .g-stc{--c:#021c47}.g-stc .art{background-image:linear-gradient(0deg,#021c47 50%,rgba(2,28,71,0) 66%),url(img/stc-feature.jpg)}
-.g-stc .tag{background:rgba(255,204,0,.2)}
 @media (max-width:819px){.g-grydo .art,.g-nockle .art,.g-magnoro .art,.g-onechance .art,.g-dttr .art,.g-stc .art{background-size:cover}}
 .tile .links{display:flex;gap:14px;margin-top:12px;font-size:14px}
 .tile .links a{opacity:.8}
