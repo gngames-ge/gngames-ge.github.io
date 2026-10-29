@@ -198,3 +198,9 @@ body.racing .h-display .out{-webkit-text-stroke-color:var(--ink)}
 .g-skyrush h3{font-size:clamp(28px,3.6vw,46px)}
 .g-skyrush .body{padding:32px}
 .g-skyrush .tag{background:rgba(64,200,255,.2)}
+
+@media (min-width:820px){.g-puzzlepath{grid-column:span 6}}
+.g-puzzlepath{--c:#0a1f4a;min-height:480px}
+.g-puzzlepath .art{background-image:linear-gradient(90deg,rgba(10,31,74,.92) 0%,rgba(10,31,74,.55) 42%,rgba(10,31,74,0) 70%),url(img/puzzlepath-feature.jpg);background-size:cover;background-position:center 50%}
+.g-puzzlepath h3{font-size:clamp(28px,3.6vw,46px)}
+.g-puzzlepath .body{padding:32px}
