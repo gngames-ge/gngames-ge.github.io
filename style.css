@@ -204,3 +204,11 @@ body.racing .h-display .out{-webkit-text-stroke-color:var(--ink)}
 .g-puzzlepath .art{background-image:linear-gradient(0deg,rgba(10,31,74,.95) 30%,rgba(10,31,74,.55) 52%,rgba(10,31,74,0) 75%),url(img/puzzlepath-feature.jpg);background-size:cover;background-position:0% 50%}
 .g-puzzlepath h3{font-size:clamp(24px,2.4vw,32px)}
 .g-puzzlepath .body{padding:24px}
+
+/* SHADOW SHIFT: full-width card under GN Racing GE */
+@media (min-width:820px){.g-shadowshift{grid-column:span 6}}
+.g-shadowshift{--c:#081527;min-height:440px}
+.g-shadowshift .art{background-image:linear-gradient(0deg,rgba(8,21,39,.95) 22%,rgba(8,21,39,.5) 48%,rgba(8,21,39,0) 72%),url(img/shadowshift-feature.jpg);background-size:cover;background-position:18% 40%}
+.g-shadowshift h3{font-size:clamp(24px,2.4vw,32px)}
+.g-shadowshift .body{padding:24px}
+.g-shadowshift .tag{background:rgba(249,199,68,.22)}
