@@ -224,13 +224,10 @@ body.racing .h-display .out{-webkit-text-stroke-color:var(--ink)}
 @media (max-width:819px){.g-shadowshift .art,.g-puzzlepath .art,.g-skyrush .art{background-size:cover}}
 
 
-/* ARROWVERSE: ESCAPE: full-width card under GN Racing GE, above the in-development row */
-@media (min-width:820px){.g-arrowverse{grid-column:span 6}}
-.g-arrowverse{--c:#0b1530;min-height:440px}
-.g-arrowverse .art{background-image:linear-gradient(0deg,rgba(11,21,48,.95) 22%,rgba(11,21,48,.4) 48%,rgba(11,21,48,0) 72%),url(img/arrowverse-card.jpg);background-size:cover;background-position:right 40%;background-color:#0b1530}
-.g-arrowverse h3{font-size:clamp(24px,2.4vw,32px)}
+/* ARROWVERSE: ESCAPE: a regular card in the three-per-row grid, styled like SHADOW SHIFT / PUZZLE PATH / SKY RUSH */
+@media (min-width:820px){.g-arrowverse{grid-column:span 2}}
+.g-arrowverse{--c:#0b1530;min-height:420px}
+.g-arrowverse .art{background-image:linear-gradient(0deg,#0b1530 50%,rgba(11,21,48,0) 66%),url(img/arrowverse-tile.jpg);background-size:100% auto;background-position:top center;background-repeat:no-repeat}
+@media (max-width:819px){.g-arrowverse .art{background-size:cover}}
+.g-arrowverse h3{font-size:22px}
 .g-arrowverse .body{padding:24px}
-.g-arrowverse .tag{background:rgba(120,170,255,.22)}
-
-/* live badge wins over per-game tag tints (SKY RUSH, ARROWVERSE showed a dim badge) */
-.tile .tag.live,.tag.live{background:#1fbf6a;color:#06210f}
