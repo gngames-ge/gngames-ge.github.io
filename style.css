@@ -231,3 +231,6 @@ body.racing .h-display .out{-webkit-text-stroke-color:var(--ink)}
 .g-arrowverse h3{font-size:clamp(24px,2.4vw,32px)}
 .g-arrowverse .body{padding:24px}
 .g-arrowverse .tag{background:rgba(120,170,255,.22)}
+
+/* live badge wins over per-game tag tints (SKY RUSH, ARROWVERSE showed a dim badge) */
+.tile .tag.live,.tag.live{background:#1fbf6a;color:#06210f}
