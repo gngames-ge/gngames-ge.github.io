@@ -197,7 +197,7 @@ body.racing .h-display .out{-webkit-text-stroke-color:var(--ink)}
 .g-skyrush .art{background-image:linear-gradient(0deg,rgba(6,20,46,.95) 30%,rgba(6,20,46,.55) 52%,rgba(6,20,46,0) 75%),url(img/skyrush-feature.jpg);background-size:cover;background-position:center 55%}
 .g-skyrush h3{font-size:clamp(24px,2.4vw,32px)}
 .g-skyrush .body{padding:24px}
-.g-skyrush .tag{background:rgba(64,200,255,.2)}
+.g-skyrush .tag:not(.live){background:rgba(64,200,255,.2)}
 
 @media (min-width:820px){.g-puzzlepath{grid-column:span 3}}
 .g-puzzlepath{--c:#0a1f4a;min-height:420px}
@@ -211,7 +211,7 @@ body.racing .h-display .out{-webkit-text-stroke-color:var(--ink)}
 .g-shadowshift .art{background-image:linear-gradient(0deg,rgba(8,21,39,.95) 22%,rgba(8,21,39,.5) 48%,rgba(8,21,39,0) 72%),url(img/shadowshift-feature.jpg);background-size:cover;background-position:18% 40%}
 .g-shadowshift h3{font-size:clamp(24px,2.4vw,32px)}
 .g-shadowshift .body{padding:24px}
-.g-shadowshift .tag{background:rgba(249,199,68,.22)}
+.g-shadowshift .tag:not(.live){background:rgba(249,199,68,.22)}
 
 /* In-development row: SHADOW SHIFT, PUZZLE PATH, SKY RUSH side by side, styled like the three-per-row cards */
 @media (min-width:820px){.g-shadowshift,.g-puzzlepath,.g-skyrush{grid-column:span 2}}
