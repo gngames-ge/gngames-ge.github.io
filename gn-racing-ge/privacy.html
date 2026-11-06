@@ -26,27 +26,35 @@
   <aside class="toc"><b>On this page</b><a href="#s1">1. Information we collect</a><a href="#s2">2. Advertising</a><a href="#s3">3. Third-party services</a><a href="#s4">4. Deleting your data</a><a href="#s5">5. Data retention</a><a href="#s6">6. Children</a><a href="#s7">7. Security</a><a href="#s8">8. Changes</a><a href="#s9">9. Contact</a><p style="margin-top:22px"><a href="./" style="border:0;padding:0;color:var(--red)">← GN Racing GE</a></p></aside>
   <article class="doc"><span class="eyebrow"><i class="cross"></i>GN Racing GE</span>
 <h1>Privacy Policy for GN Racing GE</h1>
-<span class="updated">Last updated: October 18, 2026</span>
+<span class="updated">Last updated: November 6, 2026</span>
 <p>GN Racing GE ("the game") is developed by GN Games (GNGames2020, Georgia). This policy explains what information the game handles, why, who it is shared with, and how you can delete it. Contact: <a href="mailto:gngames2020@gmail.com">gngames2020@gmail.com</a>.</p>
 
 <h2 id="s1">1. Information we collect</h2>
 <h3>Game progress and cloud save</h3>
-<p>The game saves your progress: coins, cars, upgrades, settings, level, your in-game driver name and country flag, your paint designs and your best-lap replays. If you sign in with Google Play Games, it is saved with Google Play Games Saved Games. It is also backed up with Unity Gaming Services (Unity Technologies) under an anonymous player ID, so you can restore it on a new device.</p>
+<p>The game saves your progress: coins, cars, upgrades, settings, level, your in-game driver name and country flag, your paint designs and your best-lap replays. The save also records the model name of the phone it was made on. If you sign in with Google Play Games, it is saved with Google Play Games Saved Games. It is also backed up with Unity Gaming Services (Unity Technologies) under an anonymous player ID, so you can restore it on a new device.</p>
 <h3>Online ghosts, leaderboards and achievements</h3>
-<p>When you set a lap time or drift score, the game uploads a replay of your run (which car you drove and its positions on the track) and your score. Other players can see this data and race against your replay. Scores and achievements are posted to Google Play Games, where they appear under your Google Play Games name.</p>
+<p>When you set a lap time or drift score, the game uploads a replay of your run (which car you drove and its positions on the track) and your score. Other players can see this data and race against your replay. Shared replays are stored with Unity Cloud Save, where any player who has your player ID can read them. Scores and achievements are posted to Google Play Games, where they appear under your Google Play Games name.</p>
 <h3>Live multiplayer and free roam</h3>
-<p>When you join an online race, a free roam room or watch as a spectator, the game sends your driver name, flag, car and its look, your car's position and speed on the track, your ping and your race results to the other players in the room. This goes through Photon (Exit Games), which processes your IP address to connect you to the nearest server. Room data is not kept after the room closes.</p>
+<p>When you join an online race, a free roam room or watch as a spectator, the game sends your driver name, Unity player ID, flag, car and its look, your car's position and speed on the track, your ping and your race results to the other players in the room. This goes through Photon (Exit Games), which processes your IP address to connect you to the nearest server. Room data is not kept after the room closes.</p>
 <h3>Chat, voice and friends</h3>
-<p>If you turn on chat, your text messages and voice are delivered live to the players in the channel through Vivox (Unity Technologies). We do not record voice and do not store messages, except a message that a player reports. Friend lists, friend requests and online status are stored with Unity Friends. Chat and voice are off until you turn them on, and are not available to players under 13. Voice uses the microphone only after you allow it and only while you use voice chat.</p>
+<p>If you turn on chat, your text messages are delivered live to the players in the room through Photon (Exit Games). If you turn on voice, your voice is delivered live through Vivox (Unity Technologies). We do not record voice and do not store messages, except chat lines included in a report (see Reports). Friend lists, friend requests, blocks and online status are stored with Unity Friends. Chat and voice are off until you turn them on, and what you can use depends on the age you give in the game: under 13, or no age given, no chat and no voice; 13 to 15, filtered text chat with only preset lines to strangers, and no voice; 16 and over, text chat and voice. Voice uses the microphone only after you allow it and only while you use voice chat.</p>
 <h3>Clubs and weekly tournament</h3>
 <p>If you create or join a club, the club's name, tag and emblem, its members' driver names and their weekly scores are visible to other players. If you enter the weekly tournament, your driver name and score appear on the tournament leaderboard (Unity Leaderboards). Scores are checked on our server (Unity Cloud Code) and club data is stored with Unity Cloud Save. You can leave a club at any time with LEAVE CLUB.</p>
 <h3>Reports</h3>
-<p>If you report a player or a message, we receive your player ID, the reported player's ID, the reported message text, the room and the time. We use this only for moderation.</p>
+<p>If you report a player or a message, we receive your player ID, the reported player's ID and driver name, the reason you chose, up to their last 10 chat lines in the room, the room code and the time. We use this only for moderation.</p>
 <h3>Identifiers</h3>
 <p>The game uses your Google Play Games player ID and an anonymous Unity player ID to link your save, replays, friends and online play to you.</p>
 <h3>Diagnostics</h3>
 <p>The Google Play Games, Unity and Photon SDKs may collect technical and diagnostic information to run their services.</p>
-<p>We do not collect your e-mail address, phone number, contacts or precise location. Your age bracket for chat is kept only on your phone.</p>
+<h3>Where each kind of data is kept</h3>
+<ul>
+<li><b>On your phone:</b> your progress and settings. Graphics and screen settings stay only here.</li>
+<li><b>Google Play Games, if you sign in:</b> your saved game, scores and achievements.</li>
+<li><b>Unity:</b> your backup save and shared replays (Cloud Save), friends and blocks (Friends), club data (Cloud Save), tournament scores (Leaderboards), reports (received by Cloud Code).</li>
+<li><b>Passing through only (see section 5):</b> room data and text chat (Photon), voice (Vivox).</li>
+</ul>
+<p>We do not collect your e-mail address, phone number, contacts or precise location.</p>
+<p>From version 1.4.1, your age bracket and your chat and voice choices stay on your phone and are not part of the game's cloud save. Earlier versions included them in your cloud save; they are replaced the next time a newer version saves, or removed when you use DELETE CLOUD DATA. Your block list is part of your cloud save. Android's own device backup, if turned on, may also copy the game's settings.</p>
 
 <h2 id="s2">2. Advertising</h2>
 <p>The game shows ads through Unity Ads / Unity LevelPlay. These services may collect device information, advertising identifiers, IP address, general location derived from the IP address and ad interaction data for advertising, analytics, fraud prevention and service operation, under their own privacy policies.</p>
@@ -54,26 +62,26 @@
 <h2 id="s3">3. Third-party services</h2>
 <ul>
 <li>Google Play Games Services (Google): sign-in, saved games, leaderboards, achievements. <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
-<li>Unity Gaming Services, Vivox and Unity Ads (Unity Technologies): cloud backup, online replays, friends, chat and voice, advertising. <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a></li>
-<li>Photon (Exit Games): live multiplayer rooms. <a href="https://www.photonengine.com/privacy">photonengine.com/privacy</a></li>
+<li>Unity Gaming Services, Vivox and Unity Ads (Unity Technologies): cloud backup, online replays, friends, clubs, weekly tournament, reports, voice chat, advertising. <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a></li>
+<li>Photon (Exit Games): live multiplayer rooms and text chat. <a href="https://www.photonengine.com/privacy">photonengine.com/privacy</a></li>
 </ul>
 <p>We do not sell your data.</p>
 
 <h2 id="s4">4. Deleting your data</h2>
 <ol>
-<li><b>In the game:</b> Settings &gt; ACCOUNT &gt; DELETE CLOUD DATA deletes your cloud backup account with your saved progress and shared online replays, and your Google Play Games saved game.</li>
-<li><b>By e-mail:</b> write to <a href="mailto:gngames2020@gmail.com">gngames2020@gmail.com</a> and include the player ID shown in Settings &gt; ACCOUNT. We delete your cloud save, online replays, friends data and reports about you within 30 days.</li>
+<li><b>In the game:</b> Settings &gt; ACCOUNT &gt; DELETE CLOUD DATA (press it again to confirm) deletes your Unity cloud backup account with your saved progress and shared online replays and, if you are signed in to Google Play Games at that moment, your Google Play Games saved game. If you are not signed in, that saved game stays, so sign in first. Progress on your phone stays, and cloud saving is switched off on this phone. To leave a club, use LEAVE CLUB. To make sure club, tournament, friends and report data is gone, also use the e-mail route.</li>
+<li><b>By e-mail:</b> write to <a href="mailto:gngames2020@gmail.com">gngames2020@gmail.com</a> and include the player ID shown in Settings &gt; ACCOUNT. We delete your cloud save, online replays, friends data, club membership and scores, tournament scores and reports about you within 30 days.</li>
 </ol>
 <p>Leaderboard scores and achievements are held by Google Play Games and can be managed in your Google Account and Play Games settings. Progress stored only on your phone is removed when you uninstall the game. More: <a href="delete-data.html">Delete your data</a>.</p>
 
 <h2 id="s5">5. Data retention</h2>
-<p>Cloud saves, replays and friends data are kept while your account exists and are deleted on request. Reports are kept up to 12 months. Live room data is not kept after the room closes.</p>
+<p>Cloud saves, replays, friends, club and tournament data are kept while your account exists and are deleted on request. Reports are kept up to 12 months. Live room data is not kept after the room closes.</p>
 
 <h2 id="s6">6. Children</h2>
-<p>The game is not directed at children under 13. Chat and voice are disabled for players who say they are under 13. We do not knowingly collect personal information from children under 13; if you believe a child has provided data, contact us and we will delete it.</p>
+<p>The game is not directed at children under 13. Chat and voice are disabled for players who say they are under 13, and voice is disabled for players who say they are 13 to 15. We do not knowingly collect personal information from children under 13; if you believe a child has provided data, contact us and we will delete it.</p>
 
 <h2 id="s7">7. Security</h2>
-<p>Data is sent over encrypted connections and stored by Google, Unity and Photon on their secure infrastructure.</p>
+<p>Our own requests are sent over encrypted (HTTPS) connections. Live room data sent through Photon, including your driver name, player ID, car data and text chat, is not encrypted in transit, so please do not share personal information in chat. Saved data is stored by Google and Unity.</p>
 
 <h2 id="s8">8. Changes</h2>
 <p>We may update this policy. Changes are published on this page with a new "Last updated" date.</p>
